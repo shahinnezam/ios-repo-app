@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  ios-api-app
+//  ios-repo-app
 //
 //  Created by Brian Bansenauer on 10/5/19.
 //  Copyright © 2019 Cascadia College. All rights reserved.
@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var phoneNumber: UITextField!
     @IBOutlet weak var sid: UITextField!
     
+    @IBOutlet weak var resultInfo: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,7 +22,19 @@ class ViewController: UIViewController {
 
     @IBAction func saveToAPI(_ sender: Any) {
         //TODO: create User and Repository objects needed to invoke the API's create method
-
+        let userRepo = Repository<User>(withPath: "http://216.186.69.45/services/device/users/")
+        
+        let newUser = User()
+        newUser.FirstName = firstName.text
+        newUser.LastName = lastName.text
+        newUser.PhoneNumber = phoneNumber.text
+        newUser.SID = sid.text
+        
+        userRepo.create(a: newUser)  { (user) in
+            if let id = user?.UserID, let first = user?.FirstName, let last = user?.LastName {
+                self.resultInfo.text = "Successfully create user \(first) \(last) with id \(id)"
+            }
+        }
     }
     
 }

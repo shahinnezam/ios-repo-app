@@ -9,7 +9,7 @@
 class Match: Codable {
     var name: String?
     var password: String?
-    var countTIme: String?
+    var countTime: String?
     var seekTime: String?
     var status: String?
 }

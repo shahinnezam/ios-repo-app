@@ -109,14 +109,23 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="11" translatesAutoresizingMaskIntoConstraints="NO" id="7PP-4G-0Vw">
+                                <rect key="frame" x="50" y="319.5" width="314" height="0.0"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="7PP-4G-0Vw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="0na-f7-ux4"/>
+                            <constraint firstItem="7PP-4G-0Vw" firstAttribute="top" secondItem="7oD-7l-5Rf" secondAttribute="bottom" constant="50" id="B8N-4L-5Ul"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7oD-7l-5Rf" secondAttribute="trailing" constant="26" id="C5H-Av-fpa"/>
                             <constraint firstItem="tE0-DM-jBZ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="DAr-ye-Jdb"/>
                             <constraint firstItem="7oD-7l-5Rf" firstAttribute="top" secondItem="tE0-DM-jBZ" secondAttribute="bottom" constant="25" id="Suq-DK-Ubh"/>
                             <constraint firstItem="tE0-DM-jBZ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="25" id="ieX-sZ-K8U"/>
                             <constraint firstItem="tE0-DM-jBZ" firstAttribute="leading" secondItem="7oD-7l-5Rf" secondAttribute="leading" id="lzs-G1-zRp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7PP-4G-0Vw" secondAttribute="trailing" constant="50" id="vjv-yW-mmG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -139,6 +148,7 @@
                         <outlet property="firstName" destination="FEB-la-RwC" id="qIb-sy-4hf"/>
                         <outlet property="lastName" destination="nuq-j3-T4B" id="HXU-mD-gFq"/>
                         <outlet property="phoneNumber" destination="A4P-Zc-epA" id="TAK-Jp-tNl"/>
+                        <outlet property="resultInfo" destination="7PP-4G-0Vw" id="19y-lQ-9oQ"/>
                         <outlet property="sid" destination="A4P-Zc-epA" id="bAl-UX-HwP"/>
                     </connections>
                 </viewController>

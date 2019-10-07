@@ -18,7 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		D12B603523496A6B00D612C7 /* ios-api-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-api-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D12B603523496A6B00D612C7 /* ios-repo-app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ios-repo-app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D12B603823496A6B00D612C7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D12B603A23496A6B00D612C7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D12B603D23496A6B00D612C7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -44,7 +44,7 @@
 		D12B602C23496A6B00D612C7 = {
 			isa = PBXGroup;
 			children = (
-				D12B603723496A6B00D612C7 /* ios-api-app */,
+				D12B603723496A6B00D612C7 /* ios-repo-app */,
 				D12B603623496A6B00D612C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -52,12 +52,12 @@
 		D12B603623496A6B00D612C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D12B603523496A6B00D612C7 /* ios-api-app.app */,
+				D12B603523496A6B00D612C7 /* ios-repo-app.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		D12B603723496A6B00D612C7 /* ios-api-app */ = {
+		D12B603723496A6B00D612C7 /* ios-repo-app */ = {
 			isa = PBXGroup;
 			children = (
 				D12B603823496A6B00D612C7 /* AppDelegate.swift */,
@@ -69,7 +69,7 @@
 				D12B604A23496AC000D612C7 /* repository.swift */,
 				D12B605023496C1000D612C7 /* Model */,
 			);
-			path = "ios-api-app";
+			path = "ios-repo-app";
 			sourceTree = "<group>";
 		};
 		D12B605023496C1000D612C7 /* Model */ = {
@@ -84,9 +84,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		D12B603423496A6B00D612C7 /* ios-api-app */ = {
+		D12B603423496A6B00D612C7 /* ios-repo-app */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D12B604723496A6D00D612C7 /* Build configuration list for PBXNativeTarget "ios-api-app" */;
+			buildConfigurationList = D12B604723496A6D00D612C7 /* Build configuration list for PBXNativeTarget "ios-repo-app" */;
 			buildPhases = (
 				D12B603123496A6B00D612C7 /* Sources */,
 				D12B603223496A6B00D612C7 /* Frameworks */,
@@ -96,9 +96,9 @@
 			);
 			dependencies = (
 			);
-			name = "ios-api-app";
-			productName = "ios-api-app";
-			productReference = D12B603523496A6B00D612C7 /* ios-api-app.app */;
+			name = "ios-repo-app";
+			productName = "ios-repo-app";
+			productReference = D12B603523496A6B00D612C7 /* ios-repo-app.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -116,7 +116,7 @@
 					};
 				};
 			};
-			buildConfigurationList = D12B603023496A6B00D612C7 /* Build configuration list for PBXProject "ios-api-app" */;
+			buildConfigurationList = D12B603023496A6B00D612C7 /* Build configuration list for PBXProject "ios-repo-app" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -129,7 +129,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				D12B603423496A6B00D612C7 /* ios-api-app */,
+				D12B603423496A6B00D612C7 /* ios-repo-app */,
 			);
 		};
 /* End PBXProject section */
@@ -304,12 +304,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
-				INFOPLIST_FILE = "ios-api-app/Info.plist";
+				INFOPLIST_FILE = "ios-repo-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.ios-api-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.ios-repo-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -322,12 +322,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 38V8Y67B3N;
-				INFOPLIST_FILE = "ios-api-app/Info.plist";
+				INFOPLIST_FILE = "ios-repo-app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.ios-api-app";
+				PRODUCT_BUNDLE_IDENTIFIER = "edu.cascadia.mobas.ios-repo-app";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -337,7 +337,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		D12B603023496A6B00D612C7 /* Build configuration list for PBXProject "ios-api-app" */ = {
+		D12B603023496A6B00D612C7 /* Build configuration list for PBXProject "ios-repo-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D12B604523496A6D00D612C7 /* Debug */,
@@ -346,7 +346,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D12B604723496A6D00D612C7 /* Build configuration list for PBXNativeTarget "ios-api-app" */ = {
+		D12B604723496A6D00D612C7 /* Build configuration list for PBXNativeTarget "ios-repo-app" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				D12B604823496A6D00D612C7 /* Debug */,
