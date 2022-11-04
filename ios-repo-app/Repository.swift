@@ -9,9 +9,9 @@ import Foundation
 // TODO : Add Repo Protocol to allow for a MockAPIRepo
 protocol APIRepository {
 
-}
+}	
 // TODO : Use Generics and typeAlias to make the Repository class more general
-class Repository<T>: Codable {
+class Repository<T> where T: Codable {
     var path: String
     init(withPath path:String){
         self.path = path
@@ -23,8 +23,8 @@ class Repository<T>: Codable {
         let URLstring = path + "\(id)"
         if let url = URL.init(string: URLstring){
             let task = URLSession.shared.dataTask(with: url) {(data, response, error) in
-                if let T = try? JSONDecoder().decode(T.self, from: data!){
-                    completion (T)
+                if let user = try? JSONDecoder().decode(T.self, from: data!){
+                    completion (user)
                 }
             }
             task.resume()
@@ -38,8 +38,8 @@ class Repository<T>: Codable {
         
         let task = URLSession.shared.dataTask(with: urlRequest) {
             (data, response, error) in
-            let T = try? JSONDecoder().decode(T.self, from: data!)
-            completion (T)
+            let user = try? JSONDecoder().decode(T.self, from: data!)
+            completion (user)
         }
         task.resume()
     }
